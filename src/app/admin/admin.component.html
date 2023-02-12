@@ -1,0 +1,25 @@
+<div class="admin-form">
+    <h1>Enter New Album</h1>
+    <div [formGroup]="albumForm">
+        <label class="form-group-label" for="title-input">Title</label>
+        <input type="text" formControlName="title" id="title-input" size="30"><br>
+        <label class="form-group-label" for="artist-input">Artist</label>
+        <input type="text/number" formControlName="artist" id="artist-input" size="30"><br>
+        <label class="form-group-label" for="date-input">Release Date</label>
+        <input type="text" formControlName="date" id="date-input" size="30"><br>
+        <label class="form-group-label" for="imageUrl-input">Image URL</label>
+        <input type="text/number" formControlName="imageUrl" id="imageUrl-input" size="30"><br>
+
+        <input type="hidden" formControlName="songcheck">
+
+        <p>Songs</p>
+        <ul>
+            <li *ngFor="let song of songs">Title: {{song.title}}&nbsp; &nbsp; Duration: {{song.duration}}</li>
+        </ul>
+        <app-song-form (addNewSong)="addSong($event)"></app-song-form>
+
+        <input id="album-submit-button" type="button" (click)="submitAlbum()" value="Add Album" [disabled]="!albumForm.valid">
+    </div>
+</div>
+
+

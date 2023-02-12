@@ -1,0 +1,10 @@
+<div class="details-container">
+    <h1>{{album.title}}</h1>
+    <img class="album-cover-image" [src]="album.imageUrl">
+    <p><strong>By {{album.artist}}</strong></p>
+    <p><strong>Released {{album.date}}</strong></p>
+    <h2>Tracks</h2>
+    <ol>
+        <li *ngFor="let song of album.songs"><div class="song-title">Title: {{song.title}}</div> Duration: {{song.duration}}</li>
+    </ol>
+</div>

@@ -1,0 +1,45 @@
+.admin-form {
+    margin-top: 110px;
+    font-size: 24px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.form-group-label {
+    display: inline-block;
+    width: 200px;
+}
+
+input[type="button"] {
+    background-color: slateblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 30px;
+    font-size: 34px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="button"]:disabled {
+    cursor: not-allowed;
+    background-color: lightblue;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+p {
+    margin-bottom: 0;
+}

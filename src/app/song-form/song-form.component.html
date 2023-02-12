@@ -1,0 +1,10 @@
+
+<div class="song-form-container">
+    <div [formGroup]="songForm">
+        <label for="song-input">Title</label>
+        <input type="text" formControlName="title" id="song-input">
+        <label for="duration-input">Duration</label>
+        <input type="text/number" formControlName="duration" id="duration-input" size="6">
+        <input type="button" (click)="submitSong()" value="Add Song" [disabled]="!songForm.valid">
+    </div>
+</div>

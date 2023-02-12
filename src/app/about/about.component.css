@@ -1,0 +1,23 @@
+.about-container {
+    margin-top: 110px;
+    min-width: 500px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    margin-right: 40px;
+}
+
+p {
+    display: inline-block;
+    width: 280px;
+    text-align: left;
+}
